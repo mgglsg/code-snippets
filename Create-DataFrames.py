@@ -14,6 +14,7 @@ df_random_numbers = pd.DataFrame(np.random.randn(10, 5), columns=list('RUSHY'))
 df_random_integers = pd.DataFrame(np.random.randint(0,10,size=(25,5)),columns=list('RUSHY'))
 df_random_integers
 
+# Create DataFrames with Random letters
 df_random_letters = pd.DataFrame()
 for x in list('RUSHY'):
     column_name = x
