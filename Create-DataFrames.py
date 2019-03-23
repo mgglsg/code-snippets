@@ -18,7 +18,10 @@ df_random_integers
 df_random_letters = pd.DataFrame()
 for x in list('RUSHY'):
     column_name = x
+    list_loop = []
     for i in range(0,10):
         loop_letters = random.choice(string.ascii_letters)
+        list_loop.append(loop_letters)
+    df_random_letters[column_name] = list_loop
 
 df_random_letters
